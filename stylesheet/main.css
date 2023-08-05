@@ -1,0 +1,27 @@
+.logo{
+    height: 50px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+#logonav{
+     background-color: #d7f1f4;
+}
+
+h1{
+    background: none;
+    color: #424242;
+    padding: 1em 2em;
+    font-size: 1em;
+    /* transition: 0.3s; */ /*By default it will select as "all"*/
+    transition: color 0.5s, border-color 0.25s, box-shadow 0.5s, transform 0.25s;
+}
+
+h1:hover{
+    color: red;
+    box-shadow: 0 0.5em 0.5em -0.2em #ffb5a8;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}

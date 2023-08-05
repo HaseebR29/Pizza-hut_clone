@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shopping</title>
+    <link rel="icon" id="favicon" href="/favicon.png">
+    <link rel="stylesheet" href="stylesheet/main.css">
+    <script type="module" src="./scripts/controllers/product-controller.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="m-2">
+        <div class="logo border-bottom pb-3" id="logonav">
+            <img src="https://www.pizzahut.co.in/_next/static/static/images/logo.38f9109e24d22d58d048837b27f54390.png"
+                alt="">
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-8 border border-light-subtle">
+                <h1 class="text-center fst-italic fs-4" id="button">Pizzas</h1>
+                <!-- Below code is for card style but in static manner, which we need to create dynamically using JS -->
+                <div class="row margin=2px" id="output">
+
+                </div>
+            </div>
+
+            <div class="col-4 border border-1">
+                <h3 class="text-center mt-1 pb-3 fs-4">Your Basket</h3>
+                <div class="card-body">
+                    <div class="card border-1 border-light-subtle m-1">
+
+                        <div id="carts">
+                            <h5 class="text-center m-2"> Cart is Empty :(</h5>
+                        </div>
+
+                    </div>
+                    <div id="total" class="m-3">
+                        <!-- generate dynamic totaling -->
+                    </div>
+                    <div>
+                        <a href="#" id="click" class= " text-center btn btn-success col-12">
+                            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MMNa5AQHVfUSYz" async> </script> </form>
+                        </a>
+                        <div id="chck">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
